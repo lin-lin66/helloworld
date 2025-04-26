@@ -179,3 +179,8 @@ async def predict_churn_batch(customers_data: CustomersData):
         })
 
     return {"code": 200, "message": "success", "data": results}
+
+# 直接运行时启动 uvicorn
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=8000)
