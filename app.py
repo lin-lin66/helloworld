@@ -40,7 +40,7 @@ async def startup():
     global rf_model
 
     # 读取训练数据文件 train2.csv
-    data = pd.read_csv('train2.csv')
+    data = pd.read_csv('data/train2.csv')
 
     X = data[features]
     y = data['is_churn']
